@@ -95,7 +95,7 @@ function onChange(){
   }
   if(num > tracers.length){
     for(var i = 0; i < num-tracers.length; i++){
-      tracers.push(newTracer((Math.random() * (canvas.width-30))+15,(Math.random() * (canvas.height-30))+15,1,1));
+      tracers.push(newTracer((Math.random() * (canvas.width-30))+15,(Math.random() * (canvas.height-30))+15,0,0));
     }
   } else if (num < tracers.length){
     tracers.splice(num, tracers.length);
