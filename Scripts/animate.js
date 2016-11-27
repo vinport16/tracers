@@ -20,7 +20,7 @@ function animate(tracers, canvas, context) {
 
   //tracers animation
   for(var i = 0; i < tracers.length; i++){
-    
+
     // find target
 
     targets = [];
@@ -31,10 +31,17 @@ function animate(tracers, canvas, context) {
       }
     }
     var tg = midpoint(midpoint([tracers[targets[0]].x,tracers[targets[0]].y],[tracers[targets[1]].x,tracers[targets[1]].y]),midpoint([tracers[targets[1]].x,tracers[targets[1]].y],[tracers[targets[2]].x,tracers[targets[2]].y]));
+
+    
+
+    var tg = [(tg[0]+mouseX)/2, (tg[1]+mouseY)/2];
     var target = {
       x:tg[0],
       y:tg[1]
     }
+
+
+
 
     tracers[i].xVelocity = tracers[i].xVelocity + tracers[i].xAcceleration;
     tracers[i].yVelocity = tracers[i].yVelocity + tracers[i].yAcceleration;
