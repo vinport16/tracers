@@ -40,7 +40,7 @@ function animate(tracers, canvas, context) {
     }
     
     //if(followMouse){
-    if(false){
+    if(false){ 
       target = {
         x:mouseX,
         y:mouseY
