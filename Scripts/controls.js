@@ -32,3 +32,7 @@ canvas.addEventListener('mousemove', function(evt) {
   mouseX = mousePos.x;
   mouseY = mousePos.y;
 }, false);
+
+function onClick(){
+  followMouse = !followMouse;
+}
